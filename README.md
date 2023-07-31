@@ -31,14 +31,15 @@ SIX different types SQL joins :
           FULL OUTER JOIN table2
           ON table1.column = table2.column;
 
-* SQL SELF JOIN :  A self join is a regular join, but the table is joined with itself.It is also                       called Cartesian join.
+* SQL SELF JOIN :  A self join is a regular join, but the table is joined with itself.
     * SYNTAX :
           SELECT column_name(s)
           FROM table1 T1, table1 T2
-          WHERE condition;
+          ON T1.column = T2.column;
+          
 
 * SQL CROSS JOIN : The CROSS JOIN  returns all records from both tables  where it perform M x N 
-                     action. Also called MxN join.
+                     action. Also called MxN join. It returns  cartesian prodcut. 
     * SYNTAX :
           SELECT column_name(s)
           FROM table1
